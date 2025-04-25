@@ -1,0 +1,12 @@
+C:\Users\ichoc\source\repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ichoc\source\repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.AssemblyInfoInputs.cache
+C:\Users\ichoc\source\repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.AssemblyInfo.cs
+C:\Users\ichoc\source\repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.csproj.CoreCompileInputs.cache
+C:\Users\ichoc\source\repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.sourcelink.json
+C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\bin\Debug\net7.0\LibraryLab10.deps.json
+C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\bin\Debug\net7.0\LibraryLab10.dll
+C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\bin\Debug\net7.0\LibraryLab10.pdb
+C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.dll
+C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\refint\LibraryLab10.dll
+C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.pdb
+C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\ref\LibraryLab10.dll
