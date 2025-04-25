@@ -10,3 +10,15 @@ C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\Librar
 C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\refint\LibraryLab10.dll
 C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.pdb
 C:\Users\ichoc\Source\Repos\12-iovn111\ClassLibraryLab10\obj\Debug\net7.0\ref\LibraryLab10.dll
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\bin\Debug\net7.0\LibraryLab10.deps.json
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\bin\Debug\net7.0\LibraryLab10.dll
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\bin\Debug\net7.0\LibraryLab10.pdb
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.AssemblyInfoInputs.cache
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.AssemblyInfo.cs
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.csproj.CoreCompileInputs.cache
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.sourcelink.json
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.dll
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\obj\Debug\net7.0\refint\LibraryLab10.dll
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\obj\Debug\net7.0\LibraryLab10.pdb
+C:\Users\ichoc\Source\Repos\lab_12\ClassLibraryLab10\obj\Debug\net7.0\ref\LibraryLab10.dll

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ichoc\\Source\\Repos\\12-iovn111\\ClassLibraryLab10\\LibraryLab10.csproj",
+      "projectUniqueName": "C:\\Users\\ichoc\\Source\\Repos\\lab_12\\ClassLibraryLab10\\LibraryLab10.csproj",
       "projectName": "LibraryLab10",
-      "projectPath": "C:\\Users\\ichoc\\Source\\Repos\\12-iovn111\\ClassLibraryLab10\\LibraryLab10.csproj",
+      "projectPath": "C:\\Users\\ichoc\\Source\\Repos\\lab_12\\ClassLibraryLab10\\LibraryLab10.csproj",
       "packagesPath": "C:\\Users\\ichoc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ichoc\\Source\\Repos\\12-iovn111\\ClassLibraryLab10\\obj\\",
+      "outputPath": "C:\\Users\\ichoc\\Source\\Repos\\lab_12\\ClassLibraryLab10\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
