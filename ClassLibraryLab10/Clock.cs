@@ -141,7 +141,7 @@ namespace LibraryLab10
 
         public override string ToString()
         {
-            return "Бренд: " + brand + "\n" + "Год выпуска: " + year + "\nID: " + ID.ToString();
+            return "Бренд: " + brand + " Год выпуска: " + year.ToString();
         }
         public override int GetHashCode()
         {
@@ -161,6 +161,16 @@ namespace LibraryLab10
         public object ShallowCopy()
         {
             return this.MemberwiseClone();
+        }
+
+        public static bool operator <(Clock? firstClock, Clock? secondClock)
+        {
+            return firstClock.year < secondClock.year;
+        }
+
+        public static bool operator >(Clock? firstClock, Clock? secondClock)
+        {
+            return firstClock.year > secondClock.year;
         }
     }
 }

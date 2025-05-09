@@ -347,4 +347,29 @@ public class UnitTest
 
         Assert.IsFalse(result);
     }
+
+    // --------------------------------------------
+
+    // Тестируем конструктор по умолчанию
+    [TestMethod]
+    public void Constructor_Default_InitializesDataAndChildren()
+    {
+        var pointTree = new PointTree();
+
+        Assert.IsNotNull(pointTree.data);   // Проверяем, что данные инициализированы
+        Assert.IsNull(pointTree.left);      // Левый потомок равен null
+        Assert.IsNull(pointTree.right);     // Правый потомок равен null
+    }
+
+    // Тестируем создание дерева с заданными данными
+    [TestMethod]
+    public void Constructor_ClockParameter_SetsCorrectly()
+    {
+        var clock = new Clock();  // Предположим, что класс Clock доступен
+        var pointTree = new PointTree(clock);
+
+        Assert.AreSame(clock, pointTree.data); // Данные совпадают с переданным объектом
+        Assert.IsNull(pointTree.left);         // Нет левого потомка
+        Assert.IsNull(pointTree.right);        // Нет правого потомка
+    }
 }
