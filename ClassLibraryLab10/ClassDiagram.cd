@@ -1,78 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="LibraryLab10.SmartClock" Collapsed="true">
-    <Position X="4.75" Y="2.5" Width="1.5" />
+    <Position X="4.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAEAKQAAAGgAAAAAAAAAAEEBAAAAACAgAAAAg=</HashCode>
       <FileName>SmartClock.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LibraryLab10.Clock" Collapsed="true">
-    <Position X="3" Y="1.25" Width="1.5" />
+    <Position X="3" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEEAAAABACAgAQEgAAAAAAAAAAEAJAAAAACABABIBA=</HashCode>
+      <HashCode>AAEEAAAABACAgAQEgACAAgAAAAAEAJAAAAACABABIBA=</HashCode>
       <FileName>Clock.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="LibraryLab10.ElectronicClock" Collapsed="true">
-    <Position X="1.25" Y="2.5" Width="1.5" />
+    <Position X="1.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAAIAAIACACAAAAEgAAAAAAAAAAEABAABAACAAAAAAA=</HashCode>
       <FileName>ElectronicClock.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LibraryLab10.AnalogClock" Collapsed="true">
-    <Position X="3" Y="2.5" Width="1.5" />
+    <Position X="3" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAACAAAAUggAAAAAAAACEABAAIAACIAAAAAA=</HashCode>
       <FileName>AnalogClock.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LibraryLab10.IdNumber" Collapsed="true">
-    <Position X="3.75" Y="3.5" Width="1.5" />
+    <Position X="3.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>IdNumber.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LibraryLab10.MyList&lt;T&gt;" Collapsed="true">
-    <Position X="7" Y="0.75" Width="1.5" />
+  <Class Name="LibraryLab10.MyList&lt;T&gt;">
+    <Position X="8.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIBAAAAAAAAAAAAAAAABAQQAAAAAAAABAEAAABQIAA=</HashCode>
+      <HashCode>AAIBEAAAAAAADAAAAAAABAQQAAAAAAAEBAEAAAhQIQA=</HashCode>
       <FileName>MyList.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="LibraryLab10.PointList&lt;T&gt;" Collapsed="true">
-    <Position X="7" Y="1.5" Width="1.5" />
+    <Position X="6.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAQABIAAAA=</HashCode>
       <FileName>PointList.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LibraryLab10.PointHS&lt;T&gt;" Collapsed="true">
-    <Position X="7" Y="3.25" Width="1.5" />
+    <Position X="6.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABAAAQAAAAAAA=</HashCode>
       <FileName>PointHS.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LibraryLab10.MyOpenHS&lt;T&gt;" Collapsed="true">
-    <Position X="7" Y="2.5" Width="1.5" />
+    <Position X="6.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABIAAAAAACAAAAAABAQABAQgAAAAAAAQAAAAAAFUAAA=</HashCode>
       <FileName>MyOpenHS.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LibraryLab10.PointTree">
-    <Position X="9.5" Y="0.75" Width="1.5" />
+  <Class Name="LibraryLab10.PointTree" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAIAEACAAARAAAAgAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAQAAAAgAA=</HashCode>
       <FileName>PointTree.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="LibraryLab10.MyEnumerator&lt;T&gt;">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAAACAAAAQgAAAAAAAoAAAAAAAAAA=</HashCode>
+      <FileName>MyEnumerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Interface Name="LibraryLab10.IInit" Collapsed="true">
-    <Position X="1.75" Y="3.5" Width="1.5" />
+    <Position X="1.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAACAAAAAAA=</HashCode>
       <FileName>IInit.cs</FileName>

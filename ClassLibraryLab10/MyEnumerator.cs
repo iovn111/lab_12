@@ -9,7 +9,7 @@ namespace LibraryLab10
 {
     public class MyEnumerator<T>: IEnumerator<T> where T : IInit, new()
     {
-        PointList<T> begin, current;
+        public PointList<T> begin, current;
 
         public MyEnumerator()
         {

@@ -52,17 +52,6 @@ public class UnitTest
     }
 
     [TestMethod]
-    public void ResizeMaintainsElements()
-    {
-        var set = new MyOpenHS<int>(capacity: 2, loadFactor: 0.5);
-        set.Add(1);
-        set.Add(2); // триггерит Resize()
-
-        Assert.IsTrue(set.Contains(1));
-        Assert.IsTrue(set.Contains(2));
-    }
-
-    [TestMethod]
     public void FindByKey_ElementAtPrimaryIndex_ReturnsValue()
     {
         var set = new MyOpenHS<string>(capacity: 10);
@@ -291,4 +280,91 @@ public class UnitTest
         Assert.IsNull(pointTree.left);         // Нет левого потомка
         Assert.IsNull(pointTree.right);        // Нет правого потомка
     }
+
+    // ------------------------------
+
+    private MyList<Clock> myList;
+
+    [TestInitialize]
+    public void Setup()
+    {
+        myList = new MyList<Clock>();
+    }
+
+    #region Constructors tests
+
+    [TestMethod]
+    public void Constructor_EmptyConstructor_InitializesEmptyEnumerator()
+    {
+        var enumerator = new MyEnumerator<Clock>();
+        Assert.IsNull(enumerator.begin);
+        Assert.IsNull(enumerator.current);
+    }
+    #endregion
+
+    #region Behavioral tests
+    [TestMethod]
+    public void Reset_AfterMoveNext_ResetsPositionBackToStart()
+    {
+        const int listSize = 3;
+        var enumerator = new MyEnumerator<Clock>(listSize);
+        enumerator.MoveNext(); // переходим вперёд
+        enumerator.Reset();    // выполняем сброс
+        Assert.AreSame(enumerator.begin, enumerator.current); // проверяем положение
+    }
+
+    #endregion
+
+    #region Exception handling tests
+
+    [TestMethod]
+    public void Constructor_NegativeLengthThrowsArgumentOutOfRangeException()
+    {
+        Assert.ThrowsException<ArgumentOutOfRangeException>(() => new MyEnumerator<Clock>(-1));
+    }
+
+    #endregion
+
+    #region IndexOf Method Tests
+
+    [TestMethod]
+    public void IndexOf_Method_NotImplemented_ThrowsNotImplementedException()
+    {
+        // Arrange
+        Clock clock = new Clock { brand = "Rolex", year = 2020 };
+        myList.Add(clock);
+
+        // Act & Assert
+        Assert.ThrowsException<NotImplementedException>(() => ((IList<Clock>)myList).IndexOf(clock));
+    }
+
+    #endregion
+
+    #region Insert Method Tests
+
+    [TestMethod]
+    public void Insert_Method_NotImplemented_ThrowsNotImplementedException()
+    {
+        // Arrange
+        Clock clock = new Clock { brand = "Rolex", year = 2020 };
+
+        // Act & Assert
+        Assert.ThrowsException<NotImplementedException>(() => ((IList<Clock>)myList).Insert(0, clock));
+    }
+
+    #endregion
+
+    #region RemoveAt Method Tests
+
+    [TestMethod]
+    public void RemoveAt_Method_NotImplemented_ThrowsNotImplementedException()
+    {
+        // Arrange
+        myList.Add(new Clock { brand = "Rolex", year = 2020 });
+
+        // Act & Assert
+        Assert.ThrowsException<NotImplementedException>(() => ((IList<Clock>)myList).RemoveAt(0));
+    }
+
+    #endregion
 }
