@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -6,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace LibraryLab10
 {
-    public class MyList<T>
+    public class MyList<T>: IList<T> where T : IInit, new()
     {
-        PointList<T>? begin; // начало списка
+        public PointList<T>? begin; // начало списка
 
         public int Count
         {
@@ -25,6 +26,10 @@ namespace LibraryLab10
                 return count;
             }
         }
+
+        bool ICollection<T>.IsReadOnly => false;
+
+        T IList<T>.this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void Clear()
         {
@@ -163,6 +168,31 @@ namespace LibraryLab10
                 current = current.next;
                 count++;
             }
+        }
+
+        int IList<T>.IndexOf(T item)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IList<T>.Insert(int index, T item)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IList<T>.RemoveAt(int index)
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            return new MyEnumerator<T>(this);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
         }
     }
 }

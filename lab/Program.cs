@@ -181,8 +181,8 @@ namespace lab
                 Console.WriteLine(arr[i]);
             }
 
-            list.Clear(); // Удаляем список из памяти
-            list.PrintList();
+            //list.Clear(); // Удаляем список из памяти
+            //list.PrintList();
 
             // --- Задание 2 ---
             MyOpenHS<Clock> myOpenHS = new MyOpenHS<Clock>(); // создали хеш-таблицу
@@ -228,6 +228,17 @@ namespace lab
             RemoveByKey(searchTree, randomClock); // Удаляем часики по ключу
 
             idealTree = null; searchTree = null; // Чистим памят
+
+            // --- Задание 4 ---
+            //выполняем перебор с помощью foreach
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+
+            MyEnumerator<Clock> myFirstCollection = new MyEnumerator<Clock>();    // пустая
+            MyEnumerator<Clock> mySecondCollection = new MyEnumerator<Clock>(5);  // С заданной длиной, заполненная случайно
+            MyEnumerator<Clock> myThirdCollection = new MyEnumerator<Clock>(list);// Инициализация по образцу
         }
     }
 }
