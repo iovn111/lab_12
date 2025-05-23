@@ -296,7 +296,7 @@ public class UnitTest
     [TestMethod]
     public void Constructor_EmptyConstructor_InitializesEmptyEnumerator()
     {
-        var enumerator = new MyEnumerator<Clock>();
+        var enumerator = new MyCollection<Clock>();
         Assert.IsNull(enumerator.begin);
         Assert.IsNull(enumerator.current);
     }
@@ -307,7 +307,7 @@ public class UnitTest
     public void Reset_AfterMoveNext_ResetsPositionBackToStart()
     {
         const int listSize = 3;
-        var enumerator = new MyEnumerator<Clock>(listSize);
+        var enumerator = new MyCollection<Clock>(listSize);
         enumerator.MoveNext(); // переходим вперёд
         enumerator.Reset();    // выполняем сброс
         Assert.AreSame(enumerator.begin, enumerator.current); // проверяем положение
@@ -320,7 +320,7 @@ public class UnitTest
     [TestMethod]
     public void Constructor_NegativeLengthThrowsArgumentOutOfRangeException()
     {
-        Assert.ThrowsException<ArgumentOutOfRangeException>(() => new MyEnumerator<Clock>(-1));
+        Assert.ThrowsException<ArgumentOutOfRangeException>(() => new MyCollection<Clock>(-1));
     }
 
     #endregion

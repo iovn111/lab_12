@@ -172,22 +172,71 @@ namespace LibraryLab10
 
         int IList<T>.IndexOf(T item)
         {
-            throw new NotImplementedException();
+            int index = 0;
+            PointList<T> current = begin;
+            while (current != null)
+            {
+                if (current.data.Equals(item)) // Проверяем равенство элементов
+                {
+                    return index;
+                }
+                current = current.next;
+                index++;
+            }
+            return -1; // Элемент не найден
         }
 
         void IList<T>.Insert(int index, T item)
         {
-            throw new NotImplementedException();
+            if (index < 0 || index > Count)
+            {
+                throw new ArgumentOutOfRangeException(nameof(index)); // Индекс вне допустимого диапазона
+            }
+
+            PointList<T> newPoint = new PointList<T>(item);
+
+            if (index == 0)
+            {
+                newPoint.next = begin;
+                begin = newPoint;
+            }
+            else
+            {
+                PointList<T> prev = begin;
+                for (int i = 0; i < index - 1; i++) // Проходим до предыдущего узла перед указанным индексом
+                {
+                    prev = prev.next;
+                }
+                newPoint.next = prev.next;
+                prev.next = newPoint;
+            }
         }
 
         void IList<T>.RemoveAt(int index)
         {
-            throw new NotImplementedException();
+            if (index < 0 || index >= Count)
+            {
+                throw new ArgumentOutOfRangeException(nameof(index)); // Индекс вне допустимого диапазона
+            }
+
+            if (index == 0)
+            {
+                begin = begin.next; // Удаление первого элемента
+            }
+            else
+            {
+                PointList<T> prev = begin;
+                for (int i = 0; i < index - 1; i++) // Находим предыдущий узел перед указанным индексом
+                {
+                    prev = prev.next;
+                }
+                prev.next = prev.next.next; // Пропускаем удаляемый узел
+            }
         }
 
         IEnumerator<T> IEnumerable<T>.GetEnumerator()
         {
-            return new MyEnumerator<T>(this);
+            return new MyCollection<T>(this);
         }
 
         IEnumerator IEnumerable.GetEnumerator()

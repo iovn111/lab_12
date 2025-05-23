@@ -236,9 +236,9 @@ namespace lab
                 Console.WriteLine(item);
             }
 
-            MyEnumerator<Clock> myFirstCollection = new MyEnumerator<Clock>();    // пустая
-            MyEnumerator<Clock> mySecondCollection = new MyEnumerator<Clock>(5);  // С заданной длиной, заполненная случайно
-            MyEnumerator<Clock> myThirdCollection = new MyEnumerator<Clock>(list);// Инициализация по образцу
+            MyCollection<Clock> myFirstCollection = new MyCollection<Clock>();    // пустая
+            MyCollection<Clock> mySecondCollection = new MyCollection<Clock>(5);  // С заданной длиной, заполненная случайно
+            MyCollection<Clock> myThirdCollection = new MyCollection<Clock>(list);// Инициализация по образцу
         }
     }
 }

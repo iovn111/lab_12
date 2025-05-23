@@ -7,23 +7,23 @@ using System.Threading.Tasks;
 
 namespace LibraryLab10
 {
-    public class MyEnumerator<T>: IEnumerator<T> where T : IInit, new()
+    public class MyCollection<T>: IEnumerator<T> where T : IInit, new()
     {
         public PointList<T> begin, current;
 
-        public MyEnumerator()
+        public MyCollection()
         {
             begin = null;
             current = null;
         }
         
-        public MyEnumerator(MyList<T> list)
+        public MyCollection(MyList<T> list)
         {
             begin = list.begin;
             current = list.begin;
         }
 
-        public MyEnumerator(int length)
+        public MyCollection(int length)
         {
             // Проверяем длину на допустимость
             if (length <= 0)
